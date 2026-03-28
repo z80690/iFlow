@@ -1,0 +1,50 @@
+{
+  "description": "标准化的部署流程，从构建到上线",
+  "triggers": ["manual"],
+  "steps": [
+    {
+      "name": "构建阶段",
+      "description": "编译和打包应用程序",
+      "agent": "devops-engineer",
+      "action": "bash",
+      "input": {
+        "command": "echo '执行构建任务: 拉取最新代码、安装依赖、运行构建脚本、生成构建产物'"
+      },
+      "output": "dist/{workflow_id}.zip"
+    },
+    {
+      "name": "测试阶段",
+      "description": "运行自动化测试",
+      "agent": "database-administrator",
+      "action": "bash",
+      "input": {
+        "command": "echo '执行测试任务: 运行单元测试、运行集成测试、生成测试报告'"
+      },
+      "output": "reports/test-{workflow_id}.html"
+    },
+    {
+      "name": "安全扫描",
+      "description": "扫描安全漏洞",
+      "agent": "security-engineer",
+      "action": "bash",
+      "input": {
+        "command": "echo '执行安全任务: 运行依赖漏洞扫描、运行代码安全审计、生成安全报告'"
+      },
+      "output": "reports/security-{workflow_id}.json"
+    },
+    {
+      "name": "部署阶段",
+      "description": "部署到生产环境",
+      "agent": "devops-engineer",
+      "action": "bash",
+      "input": {
+        "command": "echo '执行部署任务: 备份当前版本、部署新版本、运行健康检查、验证部署成功'"
+      },
+      "output": "logs/deploy-{workflow_id}.log"
+    }
+  ],
+  "metadata": {
+    "original_type": "sequential",
+    "original_approval_stages": ["deploy-stage"]
+  }
+}

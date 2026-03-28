@@ -1,0 +1,4 @@
+enabled: true
+config:
+  api_key: "${CONTEXT7_API_KEY}"
+  endpoint: "https://context7.com/api/v1"

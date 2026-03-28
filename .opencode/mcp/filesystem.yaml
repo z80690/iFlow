@@ -1,0 +1,4 @@
+enabled: true
+config:
+  base_path: "./workspace"
+  read_only: false

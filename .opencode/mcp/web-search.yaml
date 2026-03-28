@@ -1,0 +1,4 @@
+enabled: false
+config:
+  engine: "google"
+  api_key: "${BOCHA_API_KEY}"

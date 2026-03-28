@@ -1,0 +1,8 @@
+# 测试生成技能配置
+name: test-generation
+description: 测试生成技能，用于生成单元测试、集成测试等
+enabled: true
+config:
+  # 配置项将根据实际技能实现而定
+  framework: "jest"
+  coverage: true

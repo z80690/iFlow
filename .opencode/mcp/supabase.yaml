@@ -1,0 +1,4 @@
+enabled: true
+config:
+  url: "${SUPABASE_URL}"
+  key: "${SUPABASE_SERVICE_ROLE_KEY}"

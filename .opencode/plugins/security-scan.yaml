@@ -1,0 +1,8 @@
+# 安全扫描插件配置
+name: security-scan
+description: 自动化安全扫描插件，用于检测安全漏洞和风险
+enabled: true
+config:
+  # 配置项将根据实际插件实现而定
+  scanType: "comprehensive"
+  severityThreshold: "medium"

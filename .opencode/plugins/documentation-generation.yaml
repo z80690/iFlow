@@ -1,0 +1,8 @@
+# 文档生成插件配置
+name: documentation-generation
+description: 自动化文档生成插件，用于生成API文档、用户手册等
+enabled: true
+config:
+  # 配置项将根据实际插件实现而定
+  format: "markdown"
+  template: "default"

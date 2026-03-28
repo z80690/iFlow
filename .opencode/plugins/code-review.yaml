@@ -1,0 +1,8 @@
+# 代码审查插件配置
+name: code-review
+description: 自动化代码审查插件，用于检查代码质量、风格和潜在问题
+enabled: true
+config:
+  # 配置项将根据实际插件实现而定
+  ruleset: "recommended"
+  severity: "warning"

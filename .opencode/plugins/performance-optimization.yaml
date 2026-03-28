@@ -1,0 +1,8 @@
+# 性能优化插件配置
+name: performance-optimization
+description: 自动化性能优化插件，用于分析和优化应用性能
+enabled: true
+config:
+  # 配置项将根据实际插件实现而定
+  analysisType: "comprehensive"
+  optimizationLevel: "medium"

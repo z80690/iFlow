@@ -1,0 +1,8 @@
+# IMA技能配置 (腾讯文档集成)
+name: ima
+description: IMA技能，用于与腾讯文档集成，实现文档协作和管理
+enabled: true
+config:
+  # 配置项将根据实际技能实现而定
+  apiEndpoint: "https://api.ima.qq.com"
+  authMethod: "oauth2"

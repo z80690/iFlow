@@ -1,0 +1,8 @@
+# 代码审查技能配置
+name: code-review
+description: 代码审查技能，用于审查代码质量、风格和潜在问题
+enabled: true
+config:
+  # 配置项将根据实际技能实现而定
+  ruleset: "recommended"
+  severity: "warning"

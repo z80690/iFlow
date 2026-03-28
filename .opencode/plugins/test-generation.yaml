@@ -1,0 +1,8 @@
+# 测试生成插件配置
+name: test-generation
+description: 自动化测试生成插件，用于生成单元测试、集成测试等
+enabled: true
+config:
+  # 配置项将根据实际插件实现而定
+  framework: "jest"
+  coverage: true
