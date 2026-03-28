@@ -1,4 +1,4 @@
-{
+﻿{
     "$schema":  "https://opencode.ai/config.json",
     "agent":  {
                   "devops-engineer":  {
@@ -76,47 +76,5 @@
                                                                                        ]
                                                          }
                                         }
-              },
-    "workflowsDir":  ".opencode/workflows",
-    "mcpServers":  [
-                       {
-                           "name":  "github",
-                           "enabled":  true,
-                           "config":  {
-                                          "token":  "${GITHUB_TOKEN}"
-                                      }
-                       },
-                       {
-                           "name":  "context7",
-                           "enabled":  true,
-                           "config":  {
-                                          "api_key":  "${CONTEXT7_API_KEY}",
-                                          "endpoint":  "https://context7.com/api/v1"
-                                      }
-                       },
-                       {
-                           "name":  "supabase",
-                           "enabled":  true,
-                           "config":  {
-                                          "url":  "${SUPABASE_URL}",
-                                          "key":  "${SUPABASE_SERVICE_ROLE_KEY}"
-                                      }
-                       },
-                       {
-                           "name":  "filesystem",
-                           "enabled":  true,
-                           "config":  {
-                                          "base_path":  "./workspace",
-                                          "read_only":  false
-                                      }
-                       },
-                       {
-                           "name":  "web-search",
-                           "enabled":  false,
-                           "config":  {
-                                          "engine":  "google",
-                                          "api_key":  "${BOCHA_API_KEY}"
-                                      }
-                       }
-                   ]
+              }
 }

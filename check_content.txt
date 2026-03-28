@@ -1,6 +1,0 @@
-﻿{
-    "$schema":  "https://opencode.ai/config.json",
-    "agent":  {
-                  "devops-engineer":  {
-                                          "description":  "专注于 CI/CD、容器化和基础设施管理的智能体。能力包括：CI/CD 流水线配置和优化、Docker 容器化部署、Kubernetes 集群管理、基础设施即代码（IaC）、监控和日志管理、自动化部署和回滚。",
-                                          "model":  "anthropic/claude-3-5-sonne
