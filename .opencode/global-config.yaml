@@ -1,0 +1,86 @@
+﻿# OpenCode 全局配置文件
+# 此文件用于存储全局配置，实现配置的集中管理和自动适配
+
+# 模型配置
+model:
+  # 默认模型 - 与 OpenCode 当前使用的模型保持一致
+  default: "opencode/claude-3-5-sonnet"
+  # 备用模型列表
+  fallback:
+    - "opencode/minimax-m2.5-free"
+    - "opencode/gpt-5-nano"
+    - "opencode/mimo-v2-pro-free"
+
+# 智能体默认配置
+agents:
+  # 默认智能体列表
+  defaults:
+    - "devops-engineer"
+    - "database-administrator"
+    - "security-engineer"
+  
+  # 智能体优先级
+  priority:
+    devops-engineer: 1
+    database-administrator: 2
+    security-engineer: 3
+
+# 工具配置
+tools:
+  # 默认启用的 MCP 服务器
+  mcp:
+    defaults:
+      - "github"
+      - "context7"
+      - "supabase"
+      - "filesystem"
+      - "web-search"
+  
+  # 默认启用的插件
+  plugins:
+    defaults:
+      - "code-review"
+      - "documentation-generation"
+      - "test-generation"
+      - "security-scan"
+      - "performance-optimization"
+  
+  # 默认启用的技能
+  skills:
+    defaults:
+      - "code-review"
+      - "documentation-generation"
+      - "test-generation"
+      - "ima"
+
+# 环境变量映射
+environment:
+  # GitHub 配置
+  github:
+    token: "\"
+  
+  # Context7 配置
+  context7:
+    api_key: "\"
+    endpoint: "https://context7.com/api/v1"
+  
+  # Supabase 配置
+  supabase:
+    url: "\"
+    key: "\"
+  
+  # Web Search 配置
+  web_search:
+    engine: "google"
+    api_key: "\"
+
+# 工作流配置
+workflows:
+  # 默认工作流
+  default: "deployment-workflow"
+  
+  # 工作流超时设置（秒）
+  timeout: 300
+  
+  # 工作流并发设置
+  max_concurrent: 3

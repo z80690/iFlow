@@ -1,4 +1,4 @@
-- name: deployment-workflow
+﻿- name: deployment-workflow
   description: "标准化的部署流程，从构建到上线"
   triggers: ["manual"]
   steps:
@@ -33,3 +33,32 @@
   metadata:
     original_type: "sequential"
     original_approval_stages: ["deploy-stage"]
+
+# 默认工具配置
+default_tools:
+  # 默认 MCP 服务器
+  mcp_servers:
+    - github
+    - context7
+    - supabase
+    - filesystem
+    - web-search
+  
+  # 默认插件
+  plugins:
+    - code-review
+    - documentation-generation
+    - test-generation
+    - security-scan
+  
+  # 默认技能
+  skills:
+    - code-review
+    - documentation-generation
+    - test-generation
+
+# 工具调用策略
+tool_strategy:
+  auto_enable: true
+  fallback_on_error: true
+  timeout: 30
