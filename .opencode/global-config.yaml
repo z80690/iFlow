@@ -57,22 +57,21 @@ tools:
 environment:
   # GitHub 配置
   github:
-    token: "\"
+    token: "${GITHUB_TOKEN}"
   
   # Context7 配置
   context7:
-    api_key: "\"
+    api_key: "${CONTEXT7_API_KEY}"
     endpoint: "https://context7.com/api/v1"
   
   # Supabase 配置
   supabase:
-    url: "\"
-    key: "\"
-  
+    url: "${SUPABASE_URL}"
+    key: "${SUPABASE_SERVICE_ROLE_KEY}"
   # Web Search 配置
   web_search:
     engine: "google"
-    api_key: "\"
+    api_key: "${BOCHA_API_KEY}"
 
 # 工作流配置
 workflows:
